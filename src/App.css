@@ -36,3 +36,17 @@
     transform: rotate(360deg);
   }
 }
+
+.card-img-top{
+  object-fit: fill;
+  max-height: 12rem;
+}
+
+.card{
+  background-color: #fbe1e1;
+}
+.badge{
+  font-size: 0.6rem;
+  font-weight: 400;
+  background-color: rgb(208, 118, 54);
+}
