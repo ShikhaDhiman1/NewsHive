@@ -33,11 +33,11 @@ export class Navbar extends Component {
                     Home
                   </Link>
                 </li>
-                <li className="nav-item">
+                {/* <li className="nav-item">
                   <Link className="nav-link" to="/">
                     About
                   </Link>
-                </li>
+                </li> */}
                 <li className="nav-item dropdown">
                   <span
                     className="nav-link dropdown-toggle"
@@ -96,11 +96,11 @@ export class Navbar extends Component {
                     </li> */}
                   </ul>
                 </li>
-                <li className="nav-item">
+                {/* <li className="nav-item">
                   <Link className="nav-link" to="/">
                     Contact
                   </Link>
-                </li>
+                </li> */}
               </ul>
               <form className="d-flex" role="search">
                 <input

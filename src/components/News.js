@@ -95,7 +95,6 @@ export class News extends Component {
   })
   let url = `https://newsapi.org/v2/top-headlines?country=in&category=${this.props.category}&apiKey=3f73dcbee85145c3aae56c88551aa238&page=${this.state.page}&pageSize=${this.props.pageSize}`;
   this.setState({
-    // articles:[],
     loading: true,
   });
   let data = await fetch(url);
@@ -120,7 +119,7 @@ export class News extends Component {
       <>
         {/*  <div className="container py-5"> */}
         <center>
-          <h1 className="text-warning">Following are Some top Headlines</h1>
+          <h1 className="text-warning my-5">Following are Some top Headlines</h1>
           {this.props.category && (
             <h5>
               -from <i>{this.capitalize(this.props.category)}</i> category
@@ -145,7 +144,6 @@ export class News extends Component {
                       title={element["title"]}
                       date={element["publishedAt"].slice(0, 10)}
                       source={element.source.name}
-                      // description={element["description"].slice(0, 50) + "..."}
                       description={element.description}
                       urlToImage={
                         element.urlToImage
